@@ -98,3 +98,17 @@ console.log(resultado)
 resultado = "diego" == "diego"
 console.log(resultado)
 
+console.log("***************************************************************************OPERADORES LOGICOS *********************************************************************************************")
+// OPERADOR Y  (AND) &&
+resultado = true && false;
+console.log(resultado)
+
+// OPERADOR O (OR) ||
+resultado= true || false;
+console.log(resultado)
+
+// NEGACION
+resultado = !true
+console.log(resultado)
+
+//CONTINUAR EN MINUTO 
