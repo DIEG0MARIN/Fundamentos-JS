@@ -35,3 +35,58 @@ console.log(PI)
 
 
 //OPERADORES ARITMETICOS 
+
+//Suma
+let num1, num2, resultado
+num1 = 65;
+num2 = 87;
+resultado = num1 + num2 + 100
+// al concatenar con la coma me mantiene el dato entipo numerico, pero al concatenar con el + el tipo de dato lo asume como un dato string
+console.log("El resultado de la suma es: " ,resultado)
+
+//Multiplicacion
+resultado = num1 * num2
+console.log("El resultado de la multiplicación es: ", resultado)
+
+// DIVISION
+resultado = num1 / num2
+console.log("El reultado de la división es: ", resultado)
+
+// JERARQUIA DE OPERACIONES
+resultado = (num1 * num2)/(num1 - num2)
+console.log("El reultado de la operacion es: ", resultado)
+
+//opcion para CONCATENAR
+let num3 , num4, resul
+num3 = "65"
+num4 = "54"
+resul = num3 +num4
+console.log(resul)
+
+// OPERADOR DE INCREMENTO
+num1 = num1+1
+num2++
+console.log(num2)
+console.log(num1)
+
+// OPERADOR DE DECREMENTO
+num1--
+console.log(num1)
+num2--
+console.log(num2)
+console.log("***************************************************************************OPERADORES DE COMPARACIÓN *********************************************************************************************")
+// OPERADORES DE COMPARACION
+let num8 = 8
+let num9 = 9
+mayor = num8 > num9
+console.log(mayor)
+menor = num8 < num9
+console.log(menor)
+mayorOigual = num8>= num9
+console.log(mayorOigual)
+menorOigual = num8 <= num9
+console.log(menorOigual)
+igual = num8 == num9
+console.log(igual)
+diferente = num8 != num9
+console.log(diferente)
