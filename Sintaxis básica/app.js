@@ -32,3 +32,4 @@ console.log(edad)
 const PI =3.141592
 console.log(PI)
 //PI =3.95 LAS CONSTANTES NO CAMBIAN SU VALOR
+555
