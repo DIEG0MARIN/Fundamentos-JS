@@ -48,4 +48,3 @@ switch (opcion) {
 }
 console.log(resultado)
 
-// MINUTO 01:57.00
