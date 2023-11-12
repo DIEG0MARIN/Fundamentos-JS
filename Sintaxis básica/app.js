@@ -111,4 +111,3 @@ console.log(resultado)
 resultado = !true
 console.log(resultado)
 
-//CONTINUAR EN MINUTO 
