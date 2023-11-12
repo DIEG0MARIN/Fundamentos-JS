@@ -90,3 +90,8 @@ igual = num8 == num9
 console.log(igual)
 diferente = num8 != num9
 console.log(diferente)
+// DOBLE IGUAL: UNICAMENTE COMPARA EL VALOR MAS NO EL TIPO DE DATO. EJEMPLO:
+num1 = 5;
+num2 = "5";
+resultado = num1 == num2
+console.log(resultado)
