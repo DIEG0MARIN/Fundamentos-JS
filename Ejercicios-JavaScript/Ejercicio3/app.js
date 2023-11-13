@@ -10,6 +10,8 @@ while(numero >=1){
 
 }
 
+
+// IMPORTANTE ESTE EJERCICIO SE PUEDE USAR PARA LA SUMA DE GAUSS
 /*  Realice un código que sume los números del 1 al 5 e imprima el resultado*/
 let suma = 0;
 for(let i= 1; i <=100; i++){
@@ -17,9 +19,11 @@ for(let i= 1; i <=100; i++){
 }
 console.log("La suma de los números del 1 al 5 es: " + suma);
 
+
+
 /* Haga un código con while que imprima la tabla de multiplicar del 7.*/
 let multiplicar = 1;
-while (multiplicar <= 100) {
+while (multiplicar <= 10) {
     let resultado = 7 * multiplicar;
     console.log(`7 x ${multiplicar} = ${resultado}`);
     multiplicar++;
