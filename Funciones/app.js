@@ -44,7 +44,65 @@ console.log(suma(28,26))
 
  //console.log( despedir())
  //para el caso anterior si intento ejecutar la función me apareceera error debido a que no se ha inicializado la variable. Cosa que no pasa con las funciones declaradas, que se pueden llamar en cualquier momento.
+
+ /*estructura
+ const nombreFuncion = function(parametros{
+    Codigo que se desea ejecutar
+ }) */ 
  const despedir = function(){
     return "Muchas gracias por usar la app! Hasta luego"
  }
 console.log( despedir())
+
+// Ejemplo : crear una funcion declarada que devuelva el nombre de mi mascota y cuantos años tiene
+function mascota(nombre,edad){
+    return `Mi mascota se llama ${nombre} y tiene ${edad} años.`;
+}
+
+console.log(mascota("Sasha", "6"));
+
+// CREAR UNA FUNCION EXPRESADA QUE DEVUELVA EL NOMBRE DE USTEDES, EL DE SU MASCOTA Y LA EDAD
+
+const datos = function(nombre,edad, nombreM,age){
+    return `Hola mi nombre es ${nombre} tengo ${edad}  años y esta es mi mascota ${nombreM} ella tiene ${age} años`
+}
+console.log(datos("Diego", "28", "Sasha", "6"))
+
+// RESOLUCION DEL EJERCICIO ANTERIOR POR LA PROFESORA
+const saludarDos= function(nombreMacota,nombre,edad){
+    return `Hola mi nombre es ${nombre} , mi edad es de ${edad} años y finalmente mi mascota se llama ${nombreMacota}`
+}
+console.log(saludarDos("Sasha", "Diego", "28"))
+
+/*Según lo anterior haga un código que haga una función expresada para cada una de las siguientes operaciones:
+1. Suma
+2. Resta
+3. Multiplicación
+4. División 
+Para seleccionar la operación que se requiere realizar haga un menu con la estructura de control switch
+*/
+const calcularSuma = function(x,y){
+    return (x+y)
+}
+const calcularResta = function(x,y){
+    return (x-y)
+}
+const calcularMultiplicacion = function(x,y){
+    return (x*y)
+}
+const calcularDiv = function(x,y){
+    let operacion = (b==0) ? "No es posible la división por 0" : (a*b)
+    return operacion
+}
+
+
+
+
+
+// Alertas: puede mostrar salidas o informacion
+// Prompt: permiten ingresar informacion
+/*alert("Hola! Esta es mi primera alerta")
+let mensaje = prompt("Hola, este es mi primer prompt. Por favor deja tu mensaje")
+alert(mensaje) */
+
+//Continuar en 02:01:46
