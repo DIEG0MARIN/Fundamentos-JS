@@ -74,6 +74,10 @@ const saludarDos= function(nombreMacota,nombre,edad){
 }
 console.log(saludarDos("Sasha", "Diego", "28"))
 
+
+
+
+
 /*Según lo anterior haga un código que haga una función expresada para cada una de las siguientes operaciones:
 1. Suma
 2. Resta
@@ -91,10 +95,10 @@ const calcularMultiplicacion = function(x,y){
     return (x*y)
 }
 const calcularDiv = function(x,y){
-    let operacion = (b==0) ? "No es posible la división por 0" : (a*b)
+    let operacion = (y==0) ? "No es posible la división por 0" : (x*y)
     return operacion
 }
-
+4
 
 
 
@@ -105,4 +109,35 @@ const calcularDiv = function(x,y){
 let mensaje = prompt("Hola, este es mi primer prompt. Por favor deja tu mensaje")
 alert(mensaje) */
 
-//Continuar en 02:01:46
+let opcion =prompt("Seleccione 1.Suma, 2.Resta, 3.Multiplicación, 4.División")
+console.log(opcion)
+let num1 = 6, num2 = 8;
+switch (opcion){
+    case "1":
+        alert(calcularSuma(num1, num2))
+        break;
+
+    case "2":
+        alert(calcularResta(num1,num2))
+        break;
+    
+    case "3":
+        alert(calcularMultiplicacion(num1,num2))
+        break;
+
+    case "4":
+        alert(calcularDiv(num1,num2))
+        break;
+    default:
+        alert("opción no valida")
+        break;
+
+}
+
+let numero = 1
+// METODO PARA PASAR DE TIPO NUMERICO A TIPO STRING O CARACTER toString
+console.log(numero.toString())
+
+// PASAR DE TEXTO A NÚMERO entero o tambien esta la opcion parsefloat
+let = numeroTexto = "2"
+console.log(parseInt(numeroTexto))
