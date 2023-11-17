@@ -176,6 +176,3 @@ const mascota = {
 
 console.log(mascota)
 console.log(`El telefono del dueño de la mascota ${mascota.nombre} es: ${mascota.duenio.contacto.telefono}`)
-
-
-//CONTINUAR CLASE DEL 29 /09 
