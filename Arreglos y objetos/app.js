@@ -84,7 +84,7 @@ cancionesFavoritas.forEach(cancion=>{
 
 console.log("-------------------------Objetos ")
 //Objetos
-//CLASE CARRO
+
 const carro = {
     //Propiedades del carro
     //Propiedades son caracteristicas propias del objeto
