@@ -20,7 +20,9 @@ class Mascota{ //Definición de una clase
     moverse(){
         return 
     }
-
+    saludar(){
+        return "Hola, soy una mascota"
+    }
 
 
 
@@ -48,6 +50,7 @@ console.log(`sasha es adoptada ? ${sasha.adoptado}`)
 
 //acceder a los metodos
 console.log(luna.comer())
+console.log(sasha.saludar())
 
 // HERENCIA 
 //CLASE HIJA
@@ -63,6 +66,14 @@ class Perro extends Mascota{
     ladrar(){
         return "Guau guau"
     }
+    moverse(){
+        return "Me muevo en 4 patas"
+    }
+    //sobreescritura del metodo saludar 
+    saludar(){
+        return `Hola soy un perro y mi nombre es ${this.nombre}`
+    }
+
 }
 
 // Instanciar un objeto hijo 
@@ -74,6 +85,7 @@ console.log(kyser.comer())
 
 //accediendo a los metodos de la clase hija
 console.log(kyser.ladrar())
+console.log(kyser.saludar())
 
 
 // CREANDO CLASE GATO
@@ -113,4 +125,83 @@ console.log(sasha);
 console.log(luna);
 console.log(piolin);
 
-//Continuar minuto 01:32:00
+// Ejemplo de profesora crear clase gato y ave
+
+class Cat extends Mascota{
+    constructor(nombre,edad,adoptado,vidas){
+        //con el metodo super heredo las propiedades de la clase padre
+        super(nombre,edad,adoptado)
+
+        //inicializar atributo 
+        this.vidas = vidas
+    }
+
+    // METODOS
+    ronronear(){
+        return"Rrr"
+    }
+    cantidadVidas(){
+        // para este caso debo cambiar el iker por this , dado a que si lo dejo asi. Solo me va a retornar la información de iker  y no de los otros objetos que pueda crear
+       /* return `${iker.nombre} tiene ${iker.vidas} vidas`*/
+       return `${this.nombre} tiene ${this.vidas} vidas`
+
+    }
+
+    // SOBREESCRITURA
+    saludar(){
+        return `Hola soy un gato y mi nombre es ${this.nombre}`
+    }
+}
+
+// Instanciar la clase gato o crear objetos de la clase gato
+const iker = new Cat("iker",1, true, 7)
+console.log(iker)
+console.log(iker.cantidadVidas())
+console.log(iker.ronronear())
+console.log(iker.saludar())
+
+
+
+// crear otro gato
+const botas = new Cat("botas", 5, true, 5)
+console.log(botas.cantidadVidas())
+console.log(botas.saludar())
+//AHORA CREAR LA CLASE AVE
+class Bird extends Mascota{
+    constructor (nombre, edad, color ){
+        super(nombre,edad)
+        this.color = color
+        // plumas inicialmente esta vacio
+        this.plumas = null 
+    }
+    cantar(){
+        return "pio pio"
+    }
+    // Setters y getters
+    //Get es el método que obtiene algún valor de la clase
+    get getcolor(){
+        return this.color
+    }
+
+    // SET es el metodo que permite modificar el valor o alguna propiedad de la clase
+    set setplumas(plumas){
+        this.plumas = plumas
+    }
+    get getplumas(){
+        return this.plumas
+    }
+}
+
+//crear objeto
+const pollito = new Bird("pollito", 3, "amarillo", "pequeño")
+
+console.log(pollito.cantar())
+console.log(pollito.getcolor)
+
+// parte del metodo set
+pollito.setplumas ="Largas"
+console.log(pollito.getplumas)
+
+
+
+// continuar con la clase del 2 de octubre
