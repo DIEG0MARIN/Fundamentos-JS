@@ -1,0 +1,52 @@
+[
+    {
+        "nombre":"Diego",
+        "apellido": "Marin",
+        "edad": 28,
+        "contacto":{
+            "telefono": 3115066326,
+            "correo": "diegomarin192014@gmail.com"
+        },
+        "trabajo": true
+    },
+    {
+        "nombre":"Kelly",
+        "apellido": "Rincon",
+        "edad": 25,
+        "contacto":{
+            "telefono": 31212454,
+            "correo": "kjrincon@gmail.com"
+        },
+        "trabajo": true
+    },
+    {
+        "nombre":"Liam",
+        "apellido": "Marin",
+        "edad": 1,
+        "contacto":{
+            "telefono": 331654345,
+            "correo": "liam@gmail.com"
+        },
+        "trabajo":false
+    },
+    {
+        "nombre":"Fernando",
+        "apellido": "Gaitan",
+        "edad": 26,
+        "contacto":{
+            "telefono": 36466461,
+            "correo": "fernando@gmail.com"
+        },
+        "trabajo": false
+    },
+    {
+        "nombre":"Johana",
+        "apellido": "Mora",
+        "edad": 26,
+        "contacto":{
+            "telefono": 344646776,
+            "correo": "johana@gmail.com"
+        },
+        "trabajo": false
+    }
+]
