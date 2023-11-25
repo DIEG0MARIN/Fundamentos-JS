@@ -99,4 +99,3 @@ botonDividir.addEventListener("click",function(){
     impresionResultado.textContent = `El resultado de la división es: ${resultado}`
 })
 
-// CONTINUAR EN CLASE DEL 4 DE OCTUBRE
