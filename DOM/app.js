@@ -39,6 +39,64 @@ botonFormulario.addEventListener("click", function(){
     //console.log(nombreFormulario.value)
 
     let parrafoResultado = document.getElementById("resultadoFormulario")
-parrafoResultado.textContent = nombreFormulario.value
+parrafoResultado.textContent = `El nombre es: ${nombreFormulario.value}`
 })
 
+// CALCULADORA CON EL DOM
+
+//se crea una variable resultado para guardar los resultados de las operaciones que realicemos
+let resultado
+//Obtengo por medio del DOM y del ID el elemento boton sumar
+let botonSumar = document.getElementById("sumar")
+
+//cuando se le da click al botonSumar entonces el ejecuta la siguiente función 
+botonSumar.addEventListener("click",function(){
+
+    // obtener los numeros del formulario por medio del id, pero como getElement obtiene todo el elemento (hasta el HTML) y nosotros solo necesitamos el valor, utilizamos la propiedad value para extraer el valor de la entrada
+    let numeroUno = document.getElementById("num1").value
+    let numeroDos = document.getElementById("num2").value
+
+
+    //console.log(numeroUno, numeroDos)
+    //Una vez tengo los datos,  realizo la operación suma, pero como el valor de los formularios esta en tipo string, se pasa a tipo entero con el metodo parseInt
+    resultado  =parseInt(numeroUno) +parseInt(numeroDos)
+    let impresionResultado = document.getElementById("resultadoCalculadora")
+    impresionResultado.textContent = `El resultado de la suma es: ${resultado}`
+})
+
+// BOTON RESTAR
+let botonRestar = document.getElementById("restar")
+botonRestar.addEventListener("click",function(){
+
+
+    let numeroUno = document.getElementById("num1").value
+    let numeroDos = document.getElementById("num2").value
+    resultado  =parseInt(numeroUno)  - parseInt(numeroDos)
+    let impresionResultado = document.getElementById("resultadoCalculadora")
+    impresionResultado.textContent = `El resultado de la resta es: ${resultado}`
+})
+
+//BOTON MULTIPLICAR
+let botonMultiplicar = document.getElementById("multi")
+botonMultiplicar.addEventListener("click",function(){
+
+
+    let numeroUno = document.getElementById("num1").value
+    let numeroDos = document.getElementById("num2").value
+    resultado  =parseInt(numeroUno)  * parseInt(numeroDos)
+    let impresionResultado = document.getElementById("resultadoCalculadora")
+    impresionResultado.textContent = `El resultado de la multiplicación es: ${resultado}`
+})
+
+// BOTON DIVIDIR
+
+let botonDividir = document.getElementById("dividir")
+botonDividir.addEventListener("click",function(){
+    let numeroUno = document.getElementById("num1").value
+    let numeroDos = document.getElementById("num2").value
+    resultado  =parseInt(numeroUno)  / parseInt(numeroDos)
+    let impresionResultado = document.getElementById("resultadoCalculadora")
+    impresionResultado.textContent = `El resultado de la división es: ${resultado}`
+})
+
+// CONTINUAR EN CLASE DEL 4 DE OCTUBRE
